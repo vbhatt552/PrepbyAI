@@ -10,7 +10,7 @@ import Image from "next/image";
 import { toast } from "sonner";
 import { FormField } from "./FormField";
 import { useRouter } from "next/navigation";
-import { auth } from "./firebase/client";
+import { auth } from "../../firebase/client";
 import { signIn, signUp } from "@/lib/actions/auth.action";
 import {createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth"
 const authFormSchema = (type:FormType)=>{
