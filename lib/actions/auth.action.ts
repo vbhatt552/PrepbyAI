@@ -112,7 +112,7 @@ export async function getCurrentUser(): Promise<User | null> {
       .doc(decodedClaims.uid)
       .get();
     if (!userRecord.exists) return null;
-
+    
     return {
       ...userRecord.data(),
       id: userRecord.id,
